@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Homework 1</title>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic|PT+Serif:400,700&subset=cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript">
+function viewdiv(id)
+{
+var el=document.getElementById(id);
+if(el.style.display=="block")
+{
+el.style.display="none";
+} else {
+el.style.display="block";
+}
+}
+</script>
+</head>
+<body>
+    <div id="login-w" style="display:none;"><div id="blur"></div>
+        <div class="login-form">
+             <form action="#" >
+                <p><input type="text" placeholder="Логин" /></p>
+                <p><input type="text" placeholder="Пароль" /></p>
+                <p><input type="button" value="Войти" class="button" /><a href="javascript:void(0);" onclick="viewdiv('login-w');">Отмена</a></p>
+            </form>
+        </div>
+    </div>
+    <header class="site-header">
+           <div class="logo">lorem ipsum news</div>
+           <div class="login"><a href="javascript:void(0);" onclick="viewdiv('login-w');">Войти</a></div>
+            <div class="center"><h1>Новости</h1>
+                <ul> 
+                    <li>скандалы</li>
+                    <li>&bull;  интриги</li>
+                    <li>&bull;  расследования</li>
+                </ul>
+            </div>            
+        </header>
+        <div class="site-container">
+            <div class ="content">
+                <div class ="news">
+                   <div class="layer1"> 
+                        <div class="layer2" id="s">Скандал</div>
+                        <img class="leftimg" alt="Скандал" src="images/1.jpg"></div>
+                    <h2>Страны Евросоюза могут ввести санкции против Google</h2>
+                    <p>Европейские власти обеспокоены политикой конфиденциальности компании Google. Google хранит личные данные пользователей в одном профиле, в котором может объединяться информация с нескольких десятков разных сайтов.</p>
+                </div>
+                <div class ="news">
+                    <div class="layer1"> 
+                        <div class="layer2" id="i">Интрига</div>
+                        <img class="leftimg" alt="Интрига" src="images/2.jpg"></div>
+                    <h2>ФАС уличила ВГТРК в рекламе алкоголя при трансляции<br>футбольного матча</h2>
+                    <p>Проверка фотографий и видео-записей показала, что на рекламных стендах стадиона "Стэмфорд Бридж" во время указанного матча не были размещены рекламные плакаты данных производителей алкогольной продукции. Рассмотрение данного дела ФАС России назначил на 15 мая 2013 года.</p>
+                </div>
+                <div class ="news">
+                   <div class="layer1"> 
+                        <div class="layer2" id="r">Расследование</div>
+                        <img class="leftimg" alt="Расследование" src="images/3.jpg"></div>
+                    <h2>Возобновление борьбы за домены в зоне .рф маловероятно,<br>считают юристы</h2>
+                    <p>"По всем 70914 доменным именам поступили заявки от клиентов, желающих их приобрести в указанном порядке", - говорится в тексте судебного решения от 16 ноября 2011 г. Апелляционная инстанция частично удовлетворила иск ФАС, а кассационная передала дело на рассмотрение в президенту.</p>
+                </div>
+            </div>
+            </div>
+    <div class="site-container">
+        <footer class="site-footer">
+        © ЗАО «Лорем ипсум ньюс»
+        </footer>
+    </div>
+</body>
+</html>
