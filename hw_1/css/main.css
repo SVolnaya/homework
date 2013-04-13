@@ -11,6 +11,11 @@ div {
 display: block;
 }
 
+.clearfix
+{
+    clear:both;
+}
+
 .site-header
 {
     background-image:url("../images/line.png");
@@ -21,8 +26,8 @@ display: block;
     top: 0; 
  }
 
- .site-footer
- {
+.site-footer
+{
     background-image:url("../images/line-f.png");
     background-repeat:repeat-x;
     margin: auto;
@@ -32,7 +37,7 @@ display: block;
     padding-top: 16px;
     font: 16px 'PT Sans', sans-serif;;
     color: #666666;
-  }
+}
 
 .site-container 
 {
@@ -45,41 +50,40 @@ display: block;
     padding-bottom: 210px;  
 }
 
-.logo{
-     position: absolute; 
-     top: 16px;
-     left: 10px;
-     font:small-caps bold 24px 'PT Sans', sans-serif;;
-     letter-spacing: 0.1em;
+.logo
+{
+    position: absolute; 
+    top: 16px;
+    left: 10px;
+    font:small-caps bold 24px 'PT Sans', sans-serif;;
+    letter-spacing: 0.1em;
 }
 
 h1
- {
+{
     font: 72px 'PT Serif', serif;
     margin: 0;
- }
+}
 
- h2
- {
+h2
+{
    font: bold 18px 'PT Sans', sans-serif;;
    text-decoration: underline;
- }
+}
 
- h2 a
- {
-    color:#000000;
- }
+    h2 a
+    {
+        color:#000000;
+    }
  
- p
- {
+p
+{
    font:14px 'PT Sans', sans-serif;;
-   margin-left:10px;
-   margin-top: 18px;
- }
+}
 
 /*---------Main-------*/
- .login
- {
+.login
+{
     position: fixed; 
     top: 16px;
     right: 10px;
@@ -177,41 +181,45 @@ z-index: 0;
     box-shadow: 0 0 10px rgba(0,0,0,1); 
 }
 
-form {
-display: block;
-margin-top: 0em;
+form 
+{
+    display: block;
+    margin-top: 0em;
 }
 
-.login-form input {
-width: 240px;
-height: 25px;
+.login-form input 
+{
+    width: 240px;
+    height: 25px;
 }
 
-    .login-form .button {
-    width: 69px;
-    padding-top: 2px;
-    margin-right: 10px;
+    .login-form .button 
+    {
+        width: 69px;
+        padding-top: 2px;
+        margin-right: 10px;
     }
 
 /*--------News_1-----*/
 
-nav{
+nav
+{
      margin-top: 16px;
      text-align: center;
      font: 14px 'PT Sans', sans-serif;
 }
 
-nav a {
+a 
+{
     color:#003366;
 }
 
-nav li
+    nav li
     {
         display: inline;
-        font: 18px'PT Sans', sans-serif;
         margin-left: 20px;
     }
-/*----User----*/
+/*----User Menu----*/
 .user{
 background: rgb(252,255,244); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%); /* FF3.6+ */
@@ -272,3 +280,78 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', end
 {
     color: #666666;
 }
+/*------------End User menu------*/
+
+.box
+{
+    width: 800px;
+    margin: 0 auto;
+    padding-top:134px;
+}
+
+h3
+{
+    font: bold 24px 'PT Serif', sans-serif;
+    margin-left: 205px;
+    margin-bottom: 30px;
+}
+
+aside 
+{
+    width: 178px;
+    float: left;
+    color: #666666;
+    margin-top:135px;
+}
+
+    aside p 
+    {
+       font: 10px/ 1.6 Verdana, sans-serif; 
+    }
+
+article
+{
+    margin-bottom: 78px;
+}
+
+.text 
+{
+    float: left;
+    margin-left: 20px;
+    width: 600px;
+}
+
+section 
+{
+    width: 180px;
+    margin-left: 20px;
+    float: left;
+
+}
+
+    .bottom-section
+    {
+        border-top: 3px solid #b2b2b2;
+        width: 800px;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom:36px;
+        font: 14px  "PT Sans", sans-serif;
+    }
+
+    #other 
+    {
+        float: left;
+        font: bold 14px  "PT Sans", sans-serif;
+        color: #333333;
+        top:20px;
+        margin: 0;
+    }
+
+    section p  
+    {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+    
