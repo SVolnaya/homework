@@ -1,24 +1,21 @@
-﻿body
-{
+﻿body {
     background-image:url("../images/bg-picture.jpg");
     background-repeat: repeat;
     height:100%;
-    width:100%;
+    max-width: 100%;
     margin: 0;
+    font: 100% normal;
 }
 
-div 
-{
-    display: block;
+img {
+    max-width: 100%;
 }
 
-.clearfix
-{
+.clearfix {
     clear:both;
 }
 
-.site-header
-{
+.site-header  {
     background-image:url("../images/line.png");
     background-repeat:repeat-x;
     width:100%;
@@ -27,22 +24,20 @@ div
     top: 0; 
  }
 
-.site-footer
-{
+.site-footer {
     background-image:url("../images/line-f.png");
     background-repeat:repeat-x;
     margin: auto;
-    width:800px;
+    width:100%;
     height: 110px;
     margin-top: -110px;
     padding-top: 16px;
-    font: 16px 'PT Sans', sans-serif;
+    font: 1em 'PT Sans', sans-serif;
     color: #666666;
 }
 
-.site-container 
-{
-    width: 800px;
+.site-container {
+    width:66.66%;       /*800/1200*/
     margin: 0px auto;
 }
 
@@ -51,116 +46,97 @@ div
     padding-bottom: 210px;  
 }
 
-.logo
-{
+.logo  {
     position: absolute; 
     top: 16px;
     left: 10px;
-    font:small-caps bold 24px 'PT Sans', sans-serif;
+    font:small-caps bold 1.5em  'PT Sans', sans-serif; /*24/16*/
     letter-spacing: 0.1em;
 }
 
-h1
-{
-    font: 72px 'PT Serif', serif;
+h1  {
+    font: 4.5em 'PT Serif', serif; /*72/16*/
     margin: 0;
 }
 
-h2
-{
-   font: bold 18px 'PT Sans', sans-serif;
+h2  {
+   font: bold 1.125em 'PT Sans', sans-serif; /*18/16*/
    text-decoration: underline;
 }
 
-    h2 a
-    {
+    h2 a  {
         color:#000000;
     }
  
-p
-{
-   font:14px 'PT Sans', sans-serif;
+p {
+   font: 0.875em 'PT Sans', sans-serif; /*14/16*/
 }
 
 /*---------Main-------*/
-.login
-{
-    position: fixed; 
+.login  {
+    position: fixed;
     top: 16px;
     right: 10px;
 }
 
-#grey  
-{
+#grey  {
     text-decoration: none;
     border-bottom: 1px dashed #666666;
-    font: 14px 'PT Sans', sans-serif;
+    font: 0.875em 'PT Sans', sans-serif; /*14/16*/
     color: #666666;
 }
 
-.center
-{
+.center  {
     text-align: center;
     padding-top: 120px;   
 }
 
-.center ul
-{
+.center ul  {
     margin: 0;
     padding: 0;
 }
 
-   .center ul li
-    {
+   .center ul li {
         display: inline;
-        font: 18px'PT Sans', sans-serif;
+        font: 1.125em 'PT Sans', sans-serif; /*18/16*/
     }
-        .center ul li a
-        {
+        .center ul li a {
             text-decoration: none;
             color: #000000;
         }
 
-.news
-{
+.news {
     padding-bottom:46px;
-    height: 118px;
 }
 
-.layer1
-{
+.layer1{
     position: relative;
     float:left; 
-    margin: 0px 20px 22px 0; 
+    margin: 0px 2.5%0 0; /*20/800*/
 }
 
-.layer2
-{
+.layer2{
     position: absolute;
-    margin-left:-40px;
-    margin-top: -10px;
+    left:-40px;
+    top: -10px;
     padding: 6px 7px;
-    font:italic 14px  'PT Sans', sans-serif;
+    font:italic 0.875em 'PT Sans', sans-serif; /*14/16*/
     color: #ffffff;
 }
 
-#r
-{
+#r {
     background:#ff6666;
 }
 
-#g
-{
+#g {
     background:#99cc66;
 }
 
-#b
-{
+#b {
     background:#6699cc;
 }
 
-#blur 
-{
+#blur {
     width: 100%;
     height: 100%;
     background: #000000;
@@ -169,8 +145,7 @@ p
     z-index: 0;
 }
 
-.login-form
-{
+.login-form {
     height: 230px;
     width: 366px;
     top:284px;
@@ -183,20 +158,17 @@ p
     box-shadow: 0 0 10px rgba(0,0,0,1); 
 }
 
-form 
-{
+form {
     display: block;
     margin-top: 0em;
 }
 
-.login-form input 
-{
+.login-form input {
     width: 240px;
     height: 25px;
 }
 
-    .login-form .button 
-    {
+    .login-form .button  {
         width: 69px;
         padding-top: 2px;
         margin-right: 10px;
@@ -204,20 +176,17 @@ form
 
 /*--------News_1-----*/
 
-nav
-{
+nav {
      margin-top: 16px;
      text-align: center;
-     font: 14px 'PT Sans', sans-serif;
+     font: 0.875em 'PT Sans', sans-serif; /*14/16*/
 }
 
-a 
-{
+a {
     color:#003366;
 }
 
-    nav li
-    {
+    nav li  {
         display: inline;
         margin-left: 20px;
     }
@@ -243,14 +212,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', end
     text-shadow: 1px 1px 1px #ffffff;
     z-index: 1;
 }
-    .user p
-    {
+    .user p {
         margin: 0;
-        font-size: 14px;
+        font-size: 0.875em; /*14/16*/
     }
 
-    .user p:before
-    {
+    .user p:before     {
         position: absolute;
         height: 8px;
         left: 8px;
@@ -259,100 +226,175 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', end
         content: " ";
     }
 
-        .user:hover p:before
-        {
+        .user:hover p:before{
             background-position: 0 -6px;
         }
 
-    .user ul
-    {
+    .user ul {
         display: none;
     }
 
-        .user:hover ul
-        {
+        .user:hover ul {
             display: inline;
             margin: 0;
             padding: 0;
             line-height:1.7em;
-            font-size: 14px;
+            font-size: 0.875em; /*14/16*/
         }
 
-.user a
-{
+.user a{
     color: #666666;
 }
 /*------------End User menu------*/
 
-.box
-{
-    width: 800px;
-    margin: 0 auto;
+.box{
     padding-top:134px;
 }
 
-h3
-{
-    font: bold 24px 'PT Serif', sans-serif;
-    margin-left: 205px;
+h3{
+    font: bold 1.5em 'PT Serif', sans-serif;
+    margin-left: 25.625%; /*205/800*/
     margin-bottom: 30px;
 }
 
-aside 
-{
-    width: 178px;
+aside{
+    width: 22.25%;     /*178/800*/
     float: left;
     color: #666666;
     margin-top:135px;
 }
 
-    aside p 
-    {
-       font: 10px/ 1.6 Verdana, sans-serif; 
+    aside p {
+       font: 0.625em/ 1.6 Verdana, sans-serif;  /*10/16*/
     }
 
-article
-{
+article {
     margin-bottom: 78px;
 }
 
-.text 
-{
+.text {
     float: left;
-    margin-left: 20px;
-    width: 600px;
+    margin-left: 2.5%; /*20/800*/
+    width: 75%;     /*600/800*/
 }
 
-section 
-{
-    width: 180px;
-    margin-left: 20px;
+section {
+    width: 22.5%;     /*180/800*/
+    margin-left: 2.5%; /*20/800*/
     float: left;
 
 }
 
-    .bottom-section
-    {
+    .bottom-section {
         border-top: 3px solid #b2b2b2;
-        width: 800px;
+        width: 100%;
         margin: auto;
         padding-top: 20px;
         padding-bottom:36px;
-        font: 14px  "PT Sans", sans-serif;
+        font: 0.875em "PT Sans", sans-serif; /*14/16*/
     }
 
-    #other 
-    {
+    #other  {
         float: left;
-        font: bold 14px  "PT Sans", sans-serif;
+        font: bold 0.875em "PT Sans", sans-serif; /*14/16*/
         color: #333333;
         top:20px;
         margin: 0;
     }
 
-    section p  
-    {
-        font-size: 12px;
+    section p {
+        font-size: 0.75em; /*12/16*/
         margin: 0;
         padding: 0;
     }
+/*------------------------------------------ iPhone --------------------------------- */
+@media screen and (max-width: 640px) {
+    body{
+        max-width: 640px;
+    }
+
+    .site-container{
+        margin: 0 auto 60px;
+        width: 87.5%; /*560/640*/
+    }
+
+    .site-footer{
+        height: 90px;
+        margin-top: -90px;
+    }
+
+    .logo{
+        left: 40px;
+    }
+
+    .login  {
+        position: absolute;
+        right: 40px;
+    }
+
+   .user{
+       position: absolute;
+       right: 40px;
+   }
+
+    .content {
+        padding-top: 284px;
+        padding-bottom: 157px;
+    }
+
+    .layer2{
+        left:150px;
+    }
+
+    h2 {
+        padding-top: 23px;
+    }
+
+    .news  p {
+        padding-top: 3%;
+    }
+
+    nav {
+        padding-left: 20px;
+        text-align: left;
+        margin-top: 55px;
+
+    }
+
+    .box{
+        padding-top: 80px;
+    }
+
+    h3{
+        margin: auto;
+    }
+
+    .text{
+        width: 100%;
+        margin: auto;
+    }
+
+    .bottom-section{
+        width: 100%; /*560/640*/
+    }
+
+    aside {
+        display: none;
+    }
+
+    #other {
+        float:none;
+        margin: 0;
+        width: 100%
+    }
+
+    section{
+        width: 32.4%;     /*175/540*/
+        margin: 30px 0.925% 0 0; /*5/540*/
+        float: left;
+    }
+}
+
+
+
+
