@@ -1,0 +1,390 @@
+﻿/*---var---*/
+@grey: #666;
+@white: #fff;
+@black: #000;
+@blue:#003366;
+/*---------*/
+
+body {
+  background-image:url("../images/bg-picture.jpg");
+  background-repeat: repeat;
+  height:100%;
+  max-width: 100%;
+  margin: 0;
+  font: 100% normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+.clearfix {
+  clear:both;
+}
+
+.site-header  {
+  background-image:url("../images/line.png");
+  background-repeat:repeat-x;
+  width:100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.site-footer {
+  background-image:url("../images/line-f.png");
+  background-repeat:repeat-x;
+  margin: auto;
+  width:100%;
+  height: 110px;
+  margin-top: -110px;
+  padding-top: 16px;
+  font: 1em 'PT Sans', sans-serif;
+  color: @grey;
+}
+
+.site-container {
+  width:66.66%;       /*800/1200*/
+  margin: 0px auto;
+}
+
+.content {
+  padding-top: 322px;
+  padding-bottom: 210px;
+}
+
+.logo  {
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  font:small-caps bold 1.5em  'PT Sans', sans-serif; /*24/16*/
+  letter-spacing: 0.1em;
+}
+
+h1  {
+  font: 4.5em 'PT Serif', serif; /*72/16*/
+  margin: 0;
+}
+
+h2 {
+  font: bold 1.125em 'PT Sans', sans-serif;    /*18/16*/
+  text-decoration: underline;
+  a {
+    color:@black;
+  }
+}
+
+p {
+  font: 0.875em 'PT Sans', sans-serif; /*14/16*/
+}
+
+.login  {
+  position: fixed;
+  top: 16px;
+  right: 10px;
+}
+
+#grey  {
+  text-decoration: none;
+  border-bottom: 1px dashed @grey;
+  font: 0.875em 'PT Sans', sans-serif; /*14/16*/
+  color: @grey;
+}
+
+.center {
+  text-align: center;
+  padding-top: 120px;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline;
+      font: 1.125em 'PT Sans', sans-serif;
+      a {
+        text-decoration: none;
+        color: @black;
+      }
+    }
+  }
+}
+
+.news {
+  padding-bottom:46px;
+}
+
+.layer1{
+  position: relative;
+  float:left;
+  margin: 0px 2.5%0 0; /*20/800*/
+}
+
+.layer2{
+  position: absolute;
+  left:-40px;
+  top: -10px;
+  padding: 6px 7px;
+  font:italic 0.875em 'PT Sans', sans-serif; /*14/16*/
+  color: @white;
+}
+
+#r {
+  background:#ff6666;
+}
+
+#g {
+  background:#99cc66;
+}
+
+#b {
+  background:#6699cc;
+}
+
+#blur {
+  width: 100%;
+  height: 100%;
+  background: @black;
+  opacity: .3;
+  position: fixed;
+  z-index: 0;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+.login-form {
+  height: 230px;
+  width: 366px;
+  top:284px;
+  left: 50%;
+  margin-left: -183px;
+  background-color: @white;
+  position: absolute;
+  z-index: 1;
+  padding: 56px 0 0 64px;
+  box-shadow: 0 0 10px rgba(0,0,0,1);
+  .button {
+    width: 69px;
+    padding-top: 2px;
+    margin-right: 10px;
+  }
+  input {
+    width: 240px;
+    height: 25px;
+  }
+}
+
+/*-----News-----*/
+.gradient{
+  background: rgb(252,255,244); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(40%,rgba(223,229,215,1)), color-stop(100%,rgba(179,190,173,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
+}
+
+a {
+  color:@blue;
+}
+
+nav {
+  margin-top: 16px;
+  text-align: center;
+  font: 0.875em 'PT Sans', sans-serif;
+  li {
+    display: inline;
+    margin-left: 20px;
+  }
+}
+
+.user:hover {
+  ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    line-height:1.7em;
+    font-size: 0.875em;
+  }
+  p:before {
+    background-position: 0 -6px;
+  }
+}
+.user {
+  .gradient;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 7px;
+  top:16px;
+  padding: 3px 8px 3px 5px;
+  right: 10px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  color: @grey;
+  text-shadow: 1px 1px 1px @white;
+  z-index: 1;
+  a {
+    color: @grey;
+  }
+  ul {
+    display: none;
+  }
+  p:before {
+    position: absolute;
+    height: 8px;
+    left: 8px;
+    top: 10px;
+    width: 8px;
+    content: " ";
+  }
+  p {
+    margin: 0;
+    font-size: 0.875em;
+  }
+}
+
+.box {
+  padding-top:134px;
+}
+
+section {
+  width: 22.5%;
+  margin-left: 2.5%;
+  float: left;
+  p {
+    font-size: 0.75em;
+    margin: 0;
+    padding: 0;
+  }
+}
+article {
+  margin-bottom: 78px;
+}
+h3 {
+  font: bold 1.5em 'PT Serif', sans-serif;
+  margin-left: 25.625%;
+  margin-bottom: 30px;
+}
+#other {
+  float: left;
+  font: bold 0.875em "PT Sans", sans-serif;
+  color: #333333;
+  top:20px;
+  margin: 0;
+}
+aside {
+  width: 22.25%;
+  float: left;
+  color: @grey;
+  margin-top:135px;
+  p {
+    font: 0.625em/ 1.6 Verdana, sans-serif;
+  }
+}
+.text {
+  float: left;
+  margin-left: 2.5%;
+  width: 75%;
+}
+.bottom-section {
+  border-top: 3px solid #b2b2b2;
+  width: 100%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom:36px;
+  font: 0.875em "PT Sans", sans-serif;
+}
+  /*------------------------------------------ iPhone --------------------------------- */
+
+@media screen and (max-width: 640px) {
+  body{
+    max-width: 640px;
+  }
+
+  .site-container{
+    margin: 0 auto 60px;
+    width: 87.5%; /*560/640*/
+  }
+
+  .site-footer{
+    height: 90px;
+    margin-top: -90px;
+  }
+
+  .logo{
+    left: 40px;
+  }
+
+  .login  {
+    position: absolute;
+    right: 40px;
+  }
+
+  .user{
+    position: absolute;
+    right: 40px;
+  }
+
+  .content {
+    padding-top: 284px;
+    padding-bottom: 157px;
+  }
+
+  .layer2{
+    left:150px;
+  }
+
+  h2 {
+    padding-top: 23px;
+  }
+
+  .news  p {
+    padding-top: 3%;
+  }
+
+  nav {
+    padding-left: 20px;
+    text-align: left;
+    margin-top: 55px;
+
+  }
+
+  .box{
+    padding-top: 80px;
+  }
+
+  h3{
+    margin: auto;
+  }
+
+  .text{
+    width: 100%;
+    margin: auto;
+  }
+
+  .bottom-section{
+    width: 100%; /*560/640*/
+  }
+
+  aside {
+    display: none;
+  }
+
+  #other {
+    float:none;
+    margin: 0;
+    width: 100%
+  }
+
+  section{
+    width: 32.4%;     /*175/540*/
+    margin: 30px 0.925% 0 0; /*5/540*/
+    float: left;
+  }
+}
+
+
+
+
