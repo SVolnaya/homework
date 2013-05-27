@@ -160,7 +160,7 @@ p {
 
 form {
     display: block;
-    margin-top: 0em;
+    margin-top: 0;
 }
 
 .login-form input {
@@ -199,7 +199,7 @@ background: -webkit-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(223,229,215
 background: -o-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* IE10+ */
 background: linear-gradient(to bottom, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
 
     position: absolute;
     overflow: hidden;
@@ -303,13 +303,12 @@ section {
     }
 
     section p {
-        font-size: 0.75em; /*12/16*/
+        font-size: 0.9em;
         margin: 0;
         padding: 0;
     }
 /*------------------------------------------ comments --------------------------------- */
 .comments{
-    font: 0.75em "PT Sans", sans-serif;  /*12/16*/
     border: 1px solid #ccc;
     background-color:#fff;
     margin: 45px 0;
@@ -317,7 +316,7 @@ section {
 
 .comments-all{
     font: 1.125em 'PT Sans', sans-serif; /*18/16*/
-    margin: 30 0 30 0px;
+    margin: 30px 0px 30px 0px;
     padding:10px 20px;
     height:20px;
 }
@@ -325,7 +324,10 @@ section {
 textarea{
     width: 95%;
     height: 50px;
-    border: 2px 2px 1px 1px solid #ccc;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     resize:none;
 }
 
@@ -334,7 +336,8 @@ textarea:focus{
 }
 
 #editor {
-    padding-left: 20px;
+    padding: 0 0 20px 20px;
+
 }
 
 .comments-fake{
@@ -355,7 +358,7 @@ time{
 
 .error{
     color: #f00;
-    font: bold 1em "PT Sans", sans-serif; ;
+    font: bold 1em "PT Sans", sans-serif;
 }
 
 
